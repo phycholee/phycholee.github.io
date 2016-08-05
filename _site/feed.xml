@@ -5,9 +5,37 @@
     <description></description>
     <link>http://phycholee.github.com/</link>
     <atom:link href="http://phycholee.github.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 Aug 2016 11:18:56 +0000</pubDate>
-    <lastBuildDate>Fri, 05 Aug 2016 11:18:56 +0000</lastBuildDate>
+    <pubDate>Fri, 05 Aug 2016 12:19:25 +0000</pubDate>
+    <lastBuildDate>Fri, 05 Aug 2016 12:19:25 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>今日感想</title>
+        <description>&lt;p&gt;今天把GitHub Page搭起来了，作为个人博客，用了 &lt;a href=&quot;http://huangxuan.me/&quot;&gt;Hux&lt;/a&gt; 的主题模板，因为我个人的前端很差。&lt;/p&gt;
+
+&lt;p&gt;其实很早就想搭建GitHub Page，当时看到Jekyll好像有点难，就退缩了。这次经过两天的摸索，终于把一部分功能搞定了，接下来还要弄分类和分页，再来还要给自己的信息做一个完美的展示，相信不会难，只要入门了，一切就好办了。&lt;/p&gt;
+
+&lt;p&gt;其实这篇也算是篇测试文章，但干脆给自己写点话，已经很久没有写过东西了，甚至连800字的作文也忘记怎么下手了，虽然是一个理科生，但也应该好好学学吹牛逼，不对是表达能力。心里清楚却无从下口，不能对事情进行清晰合理的表达，这是为目前很大的缺点。&lt;/p&gt;
+
+&lt;p&gt;好了，今天的感想到此为止，不会长篇大论，也不必要，改天再来完善。&lt;/p&gt;
+
+&lt;p&gt;三星Galaxy Note7好美，虽然还是觉得没超过S7 edge。不过反正没钱。
+&lt;img src=&quot;/assets/posts_img/20160805/20160805_todaytalk01.jpg&quot; alt=&quot;三星Galaxy Note7&quot; width=&quot;690px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;蓝色简直美爆
+&lt;img src=&quot;/assets/posts_img/20160805/20160805_todaytalk02.jpg&quot; alt=&quot;三星Galaxy Note7&quot; width=&quot;690px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;完！感觉尾巴好空啊。&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 05 Aug 2016 11:36:40 +0000</pubDate>
+        <link>http://phycholee.github.com/todaytalk/2016/08/05/today-talk.html</link>
+        <guid isPermaLink="true">http://phycholee.github.com/todaytalk/2016/08/05/today-talk.html</guid>
+        
+        
+        <category>todayTalk</category>
+        
+      </item>
     
       <item>
         <title>小米Note2将登场 传下周开始发送邀请函</title>
