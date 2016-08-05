@@ -1,0 +1,33 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: PhychoLee's Blog
+email: 962109025@qq.com
+
+baseurl: /phycholee.github.com
+description: > # this means to ignore newlines until "baseurl:"
+    
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://phycholee.github.com" 
+
+github_username:  phycholee
+
+# Build settings
+markdown: kramdown
+
+#分页
+paginate: 8
+paginate_path: "posts/page:num"
+
+#时区
+timezone: Asia/Shanghai
+
+highlighter: rouge
+
+gems: [jekyll-paginate]

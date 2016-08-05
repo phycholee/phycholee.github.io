@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navigation.html %}
+
+    <!-- Main Content -->
+	<div class="container">
+		<div class="row">
+			<!-- Post Container -->
+			<div class="col-lg-8 col-lg-offset-1
+						col-md-8 col-md-offset-1
+						col-sm-12
+						col-xs-12
+						post-container">
+				<!-- Main Content -->
+				<div class="post-preview">
+					{{ content }}
+				</div>
+				<hr>
+
+				<!-- Pager -->
+				<ul class="pager">
+				</ul>
+			</div>
+
+			<!-- Sidebar Container -->
+			<div class="col-lg-3 col-lg-offset-0
+					col-md-3 col-md-offset-0
+					col-sm-12
+					col-xs-12
+					sidebar-container">
+					
+				<!-- Featured Tags -->
+				<section>
+					<!-- no hr -->
+					<h5><a href="#">分类</a></h5>
+					{% include categories.html %}
+				</section>
+
+				<hr>
+				<h5>最近文章</h5>
+				{% include recent_post.html %}
+
+				<!-- Friends Blog -->
+				<hr>
+				<h5>友情链接</h5>
+				{% include links.html %}
+				
+			</div>
+		</div>
+	</div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PhychoLee's Blog</title>
+    <description></description>
+    <link>http://phycholee.github.com/</link>
+    <atom:link href="http://phycholee.github.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 05 Aug 2016 11:18:56 +0000</pubDate>
+    <lastBuildDate>Fri, 05 Aug 2016 11:18:56 +0000</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>小米Note2将登场 传下周开始发送邀请函</title>
+        <description>&lt;p&gt;此前一直传闻小米会在8月16日发布新机，而现在则有了进一步的消息。根据网友在微博上的爆料称，小米将在下周发出邀请函，预计将于8月16日正式推出小米Note 2和小米智能手表。同时小米旗下还有一款型号为2015211的新机获得了3C认证和无线电发射型号核准，并且由于所配的充电器型号支持高通QC3.0快充技术，所以被推测有可能便是即将登场的小米Note 2。&lt;/p&gt;
+
+&lt;p&gt;尽管坊间一直传闻小米会在8月份发布新机，但却并未得到官方的证实。不过，随着疑似小米Note 2谍照的曝光，网络上也终于传出小米发布会的消息。根据网友在微博上的爆料称，小米将于下周正式放出邀请函，预计在8月16日推出小米Note 2和小米智能手表。&lt;/p&gt;
+
+&lt;p&gt;不过，以上消息的真实性尚未得到证实。但此前行业分析师@潘九堂曾经在微博上表示：“按生产计划，8月小米Note2和华米的智能手表都应该要发了。现在乐魅米华每月一言不合就开发布会，高烧停不下来，还预啥热啊。”因此，不出意外的话，备受期待的小米Note 2确有可能在8月16日正式登场。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;	&lt;span class=&quot;kp&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;nothing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Fri, 05 Aug 2016 09:51:40 +0000</pubDate>
+        <link>http://phycholee.github.com/news/2016/08/05/xiaomi-note2.html</link>
+        <guid isPermaLink="true">http://phycholee.github.com/news/2016/08/05/xiaomi-note2.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 26 Jun 2016 07:38:40 +0000</pubDate>
+        <link>http://phycholee.github.com/jekyll/update/2016/06/26/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://phycholee.github.com/jekyll/update/2016/06/26/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>

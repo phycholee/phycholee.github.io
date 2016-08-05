@@ -1,0 +1,27 @@
+---
+layout: default
+title: "三楼四楼"
+---
+
+<!-- Loop output paged posts -->
+{% for post in site.posts %}
+
+	<a href="{{ post.url }}">
+		<h2 class="post-title">
+			{{ post.title }}
+		</h2>
+
+		<h3 class="post-subtitle">
+			{{ post.subtitle }}
+		</h3>
+
+		<div class="post-content-preview">
+			{{ post.excerpt }}
+		</div>
+	</a>
+	<p class="post-meta">
+		Posted by PhychoLee on
+		{{ post.date | date:"%Y-%m-%d" }}
+	</p>
+
+{% endfor %}
