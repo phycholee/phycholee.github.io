@@ -27,7 +27,7 @@
 		<div class="row">
 			<!-- Post Container -->
 			<div class="col-lg-8 col-lg-offset-2
-						col-md-8 col-md-offset-2
+						col-md-8 col-md-offset-1
 						col-sm-12
 						col-xs-12
 						post-container">
@@ -39,7 +39,23 @@
 
 				<!-- Pager -->
 				<ul class="pager">
-				</ul>
+                    {% if page.previous.url %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+                        Previous<br>
+                        <span>{{page.previous.title}}</span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="next">
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+                        Next<br>
+                        <span>{{page.next.title}}</span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
 			</div>
 		</div>
 	</div>

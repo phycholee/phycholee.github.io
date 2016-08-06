@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-
+	<head>
+	<title>{% for cat in site.all_categories %}{% if page.category == cat[0] %}{{cat[1]}}{{ site.name }}{% endif %}{% endfor %}</title>
+  </head>
   {% include head.html %}
-
+  
   <body>
 
     {% include navigation.html %}
 
 	<!-- Page Header -->
-	<header class="intro-header" style="background-image: url('/assets/img/work.jpg');">
+	<header class="intro-header" style="background-image: url('{% for cat in site.all_categories %}{% if page.category == cat[0] %}{% if cat[4] %}{{cat[4]}}{{ site.name }}{% else %}{{ site.header-img }}{% endif %}{% endif %}{% endfor %}');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
 					<div class="site-heading">
-						<h1>{% for cat in site.all_categories %}{% if page.category == cat[0] %}栏目：{{cat[1]}} - {{ site.name }}{% endif %}{% endfor %}</h1>
+						<h1 style="font-size:3.0em;">{% for cat in site.all_categories %}{% if page.category == cat[0] %}{{cat[1]}}{{ site.name }}{% endif %}{% endfor %}</h1>
 						<!--<hr class="small">-->
-						<span class="subheading">随便说说</span>
+						<span class="subheading">{% for cat in site.all_categories %}{% if page.category == cat[0] %}{{cat[3]}}{{ site.name }}{% endif %}{% endfor %}</span>
 					</div>
 				</div>
 			</div>
@@ -42,8 +44,21 @@
 					<h2>{{ post.date | date: '%Y' }}</h2> 
 				  {% endif %}
 				  <li>
-					<h4><span>{{ post.date | date:"%Y-%m-%d" }}</span>&raquo;
-					<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+					<!--<h4><span>{{ post.date | date:"%Y-%m-%d" }}</span>&raquo;-->
+
+					<a class="post" href="{{ post.url }}">
+						<h2 class="post-title">
+							{{ post.title }}
+						</h2>
+
+						<h3 class="post-subtitle">
+							{{ post.subtitle }}
+						</h3>
+					</a>
+					<p class="post-meta">
+						Posted by PhychoLee on
+						{{ post.date | date:"%Y-%m-%d" }}
+					</p>
 				  </li> 
 				{% endfor %}
 				</ul>

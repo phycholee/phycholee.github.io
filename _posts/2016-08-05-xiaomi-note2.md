@@ -2,6 +2,7 @@
 layout: post
 title:  "小米Note2将登场 传下周开始发送邀请函"
 date:   2016-08-05 17:51:40 +0800
+author: PhychoLee
 categories: [news, digital]
 header-img: assets/posts_img/header/xiaomi_note.jpeg
 ---
@@ -12,8 +13,3 @@ header-img: assets/posts_img/header/xiaomi_note.jpeg
 
 不过，以上消息的真实性尚未得到证实。但此前行业分析师@潘九堂曾经在微博上表示：“按生产计划，8月小米Note2和华米的智能手表都应该要发了。现在乐魅米华每月一言不合就开发布会，高烧停不下来，还预啥热啊。”因此，不出意外的话，备受期待的小米Note 2确有可能在8月16日正式登场。
 
-{% highlight ruby %}
-	public void sty(){
-		nothing();
-	}
-{% endhighlight %}

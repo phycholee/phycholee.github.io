@@ -1,10 +1,10 @@
 <!--最近发表文章-->
 <ul class="recent-post">
-	{% for post in site.posts limit:5 %}
+	{% for post in site.related_posts limit:5 %}
 	  <li>
 		<a href="{{ post.url }}">
 		  {{ post.title }}
 		</a>
 	  </li>
-	{% endfor %} 
+	{% endfor %}  
 </ul>

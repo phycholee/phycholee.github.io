@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://phycholee.github.com" 
 
-header-img: assets/img/work.jpg
+header-img: /assets/img/work.jpg
 
 github_username:  phycholee
 
@@ -33,3 +33,11 @@ highlighter: rouge
 #permalink: pretty
 
 gems: [jekyll-paginate]
+
+all_categories: [
+["front", "前端开发","/posts/front.html","前端知识笔记"], 
+["java", "Java","/posts/java.html","Java笔记","/assets/img/java.png"],
+["news", "新闻","/posts/news.html","新闻热点"], 
+["todayTalk", "今日感想","/posts/todayTalk.html","记录生活随想","/assets/img/notebook.jpg"],
+["digital", "数码","/posts/digital.html","数码新潮","/assets/img/digital.jpeg"]
+]
