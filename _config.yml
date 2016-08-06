@@ -21,6 +21,9 @@ github_username:  phycholee
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
 
 #分页
 paginate: 8
