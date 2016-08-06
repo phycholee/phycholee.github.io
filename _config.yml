@@ -9,12 +9,13 @@
 title: PhychoLee's Blog
 email: 962109025@qq.com
 
-baseurl: /phycholee.github.com
+#baseurl: /phycholee.github.com
 description: > # this means to ignore newlines until "baseurl:"
     
-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://phycholee.github.com" 
+
+header-img: assets/img/work.jpg
 
 github_username:  phycholee
 
@@ -29,5 +30,6 @@ paginate_path: "posts/page:num"
 timezone: Asia/Shanghai
 
 highlighter: rouge
+#permalink: pretty
 
 gems: [jekyll-paginate]

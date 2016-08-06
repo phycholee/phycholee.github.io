@@ -13,7 +13,7 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
 					<div class="site-heading">
-						<h1>PhychoLee Blog</h1>
+						<h1>{% for cat in site.all_categories %}{% if page.category == cat[0] %}栏目：{{cat[1]}} - {{ site.name }}{% endif %}{% endfor %}</h1>
 						<!--<hr class="small">-->
 						<span class="subheading">随便说说</span>
 					</div>
@@ -32,9 +32,21 @@
 						col-xs-12
 						post-container">
 				<!-- Main Content -->
-				<div class="post-preview">
-					{{ content }}
-				</div>
+
+				<!-- List -->
+				<ul class="list-unstyled">
+				{% for post in site.categories[page.category] %}
+				  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+				  {% if year != y %}
+					{% assign year = y %}
+					<h2>{{ post.date | date: '%Y' }}</h2> 
+				  {% endif %}
+				  <li>
+					<h4><span>{{ post.date | date:"%Y-%m-%d" }}</span>&raquo;
+					<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+				  </li> 
+				{% endfor %}
+				</ul>
 				<hr>
 
 				<!-- Pager -->
