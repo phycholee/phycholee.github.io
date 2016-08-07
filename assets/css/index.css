@@ -342,6 +342,21 @@ a img:hover, a img:focus {
     }
 }
 
+/*文章头样式*/
+.intro-header .post-heading .subtitle {
+    font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: -5px 0 20px;
+}
+.intro-header .post-heading .meta {
+    font-family: Lora,"Times New Roman",serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+}
+
 /*内容样式*/
 .post-container a {
     color: #337ab7
