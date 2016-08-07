@@ -45,7 +45,7 @@
                     <li class="previous">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
                         上一章<br>
-                        <span>{{page.previous.title}}</span>
+                        <span>{{page.previous.title | strip_html | truncate:14 }}</span>
                         </a>
                     </li>
                     {% endif %}
