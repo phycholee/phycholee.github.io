@@ -11,7 +11,7 @@ header-img:
 > Java线程学习笔记
 
 
-我对Java线程的运用比少，在JavaEE对框架进行开发很少用到多线程，在Android开发中稍微运用多一些，但知识最简单的创建线程，调用run方法。
+我对Java线程的运用比少，在JavaEE对框架进行开发很少用到多线程，在Android开发中稍微运用多一些，但只是最简单的创建线程，调用run方法。
 这几天在慕课网观看视频*[细说多线程之Thread VS Runnable](http://www.imooc.com/view/312)*重新系统学习Java线程知识，对其进行归纳总结，以下是知识笔记：
 
 ### 线程创建的两种方式 ###

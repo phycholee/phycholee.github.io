@@ -4,7 +4,7 @@ title:  "小米Note2将登场 传下周开始发送邀请函"
 date:   2016-08-05 17:51:40 +0800
 author: PhychoLee
 categories: [news, digital]
-header-img: assets/posts_img/header/xiaomi_note.jpeg
+header-img: /assets/posts_img/header/xiaomi_note.jpeg
 ---
 
 此前一直传闻小米会在8月16日发布新机，而现在则有了进一步的消息。根据网友在微博上的爆料称，小米将在下周发出邀请函，预计将于8月16日正式推出小米Note 2和小米智能手表。同时小米旗下还有一款型号为2015211的新机获得了3C认证和无线电发射型号核准，并且由于所配的充电器型号支持高通QC3.0快充技术，所以被推测有可能便是即将登场的小米Note 2。

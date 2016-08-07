@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://phycholee.github.com" 
 
-header-img: assets/img/work.jpg
+header-img: /assets/img/work.jpg
 
 github_username:  phycholee
 
@@ -27,7 +27,7 @@ kramdown:
 
 #分页
 paginate: 8
-paginate_path: "posts/page:num"
+#paginate_path: "posts/page:num"
 
 #时区
 timezone: Asia/Shanghai

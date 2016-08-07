@@ -496,6 +496,13 @@ a img:hover, a img:focus {
     margin-top: 60px;
     font-weight: 700
 }
+/*文章图片自适应*/
+.post-container img {
+    display: block;
+    height: auto;
+    margin: 1.5em auto 1.6em;
+    max-width: 100%;
+}
 
 /*右侧导航*/
 .sidebar-container {
