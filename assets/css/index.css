@@ -233,6 +233,30 @@ a img:hover, a img:focus {
     }
 }
 
+/*屏幕缩小后呼出菜单按钮样式*/
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: inherit
+}
+.navbar-default .navbar-toggle:active {
+    background-color: rgba(255, 255, 255, .25)
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    padding: 19px 16px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    border-radius: 50%
+}
+.navbar-default .navbar-toggle .icon-bar {
+    width: 18px;
+    border-radius: 0;
+    background-color: #fff
+}
+.navbar-default .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 3px
+}
+
 /*头部样式*/
 .intro-header {
     background: no-repeat center center;

@@ -4,24 +4,36 @@ $(document).ready(function (a) {
 	var $navbar = document.querySelector('#huxblog_navbar');
 	var $collapse = document.querySelector('.navbar-collapse');
 
-	$toggle.addEventListener('click', handleMagic)
-	function handleMagic(e) {
-		if ($navbar.className.indexOf('in') > 0) {
-			// CLOSE
-			$navbar.className = " ";
-			// wait until animation end.
-			setTimeout(function () {
-				// prevent frequently toggle
-				if ($navbar.className.indexOf('in') < 0) {
-					$collapse.style.height = "0px"
-				}
-			}, 400)
-		} else {
-			// OPEN
-			$collapse.style.height = "auto"
-			$navbar.className += " in";
-		}
-	}
+	var handleMagic = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px";
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto";
+            $navbar.className += " in";
+        }
+    }
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            handleMagic.close();
+        }else{
+            handleMagic.open();
+        }
+    });
+    //点击外部，关闭菜单框
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        handleMagic.close();
+    });
 	
 	var b = 1170;
 	if (a(window).width() > b) {
