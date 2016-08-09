@@ -56,8 +56,8 @@
 						</h3>
 					</a>
 					<p class="post-meta">
-						Posted by PhychoLee on
-						{{ post.date | date:"%Y-%m-%d" }}
+						Posted by {{ post.author }} on
+						{{ post.date | date:"%Y.%m.%d" }}
 					</p>
 				  </li> 
 				{% endfor %}

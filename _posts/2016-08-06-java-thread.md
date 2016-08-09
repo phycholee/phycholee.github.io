@@ -16,7 +16,7 @@ header-img:
 ### 线程创建的两种方式 ###
 
 
-1. 继承Thread类
+- 继承Thread类
 
 
 {% highlight ruby %}
@@ -33,7 +33,7 @@ header-img:
 {% endhighlight %}
 
 
-2. 实现Runnable接口
+- 实现Runnable接口
 
 
 {% highlight ruby %}

@@ -5,8 +5,8 @@
     <description></description>
     <link>http://phycholee.github.com/</link>
     <atom:link href="http://phycholee.github.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Aug 2016 00:53:59 +0000</pubDate>
-    <lastBuildDate>Mon, 08 Aug 2016 00:53:59 +0000</lastBuildDate>
+    <pubDate>Tue, 09 Aug 2016 09:20:28 +0000</pubDate>
+    <lastBuildDate>Tue, 09 Aug 2016 09:20:28 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -117,9 +117,9 @@
 
 &lt;h3 id=&quot;section&quot;&gt;线程创建的两种方式&lt;/h3&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;继承Thread类&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;	&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyThread&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;vi&quot;&gt;@Override&lt;/span&gt;
@@ -130,9 +130,9 @@
 	&lt;span class=&quot;no&quot;&gt;MyThread&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MyThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;创建线程&lt;/span&gt;
 	&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;启动线程&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;实现Runnable接口&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;	&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyThread&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Runnable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 		&lt;span class=&quot;vi&quot;&gt;@Override&lt;/span&gt;
