@@ -54,6 +54,9 @@
 						<h3 class="post-subtitle">
 							{{ post.subtitle }}
 						</h3>
+						<div class="post-content-preview">
+							{{ post.content | strip_html | truncate:180 }}
+						</div>
 					</a>
 					<p class="post-meta">
 						Posted by {{ post.author }} on
