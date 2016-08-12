@@ -103,3 +103,105 @@ Java中的类都是java.lang.Class类的实例对象
 
 {% endhighlight %}
 
+---
+
+### Method类 ###
+
+- 通过class type获取类的**方法**信息
+
+{% highlight ruby %}
+
+	Class c = obj.getClass();
+	//获取此类的所有public方法，包括继承父类的方法
+	Method[] ms = c.getMethods();
+	//获取所有该类自己声明的方法,不管访问权限
+	Method[] dms =c.getDeclaredMethods();
+
+	for(Method method:ms){
+		//获取方法名
+		method.getName();
+		//获取返回类型的名称
+		method.getReturnType().getName;
+		//获取方法参数class type数组
+		Class[] params = method.getParameterType();
+	}
+
+{% endhighlight %}
+
+---
+
+### Field类 ###
+
+- 通过class type获取类的**变量**信息
+
+{% highlight ruby %}
+
+	Class c = obj.getClass();
+	//获取此类的所有public变量，包括继承父类的变量
+	Field[] fs = c.getFields();
+	//获取所有该类自己声明的变量
+	Field[] dfs =c.getDeclaredFields();
+
+	for(Field field:dfs){
+		//获取变量的类型的class type
+		Class fieldType = field.getType();
+		String typeName = fieldType.getName();
+		//获取变量名
+		String fieldName = field.getName();
+	}
+
+{% endhighlight %}
+
+---
+
+### Constructor类 ###
+
+获取构造函数
+
+{% highlight ruby %}
+
+	Class c = obj.getClass();
+	Constructor[] cs = c.getDeclaredConstructors();
+	for(Constructor constructor:cs){
+		//获取构造函数名
+		constructor.getName();
+		//获取参数的class type
+		Class[] paramType = constructor.getParameter();
+	}
+
+
+
+{% endhighlight %}
+
+### 反射调用方法 ###
+
+用反射调用某个实例的方法
+
+{% highlight ruby %}
+
+	Person p = new Person;
+	Class c = p.getClass();
+	
+	//获取方法
+	Method m = c.getMethod("sayHi", String.class);
+	//调用方法
+	m.invoke(p, "meta");
+
+	
+	public class Person{
+		public void sayHi(String name){
+			System.out.println("Hi, I'm "+name);
+		}
+	}
+	
+{% endhighlight %}
+
+---
+
+### 泛型 ###
+
+- 泛型只在编译时有效
+
+	比如：List&lt;String&gt; list = new ArrayList&lt;String&gt;();
+
+	一般认为在list中只能添加String类型的值，但绕过编译，用反射机制给list添加值，则可以添加Integer类型的值，但此时foreach就不能使用。
