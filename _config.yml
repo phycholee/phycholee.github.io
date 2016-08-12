@@ -17,6 +17,8 @@ url: "http://phycholee.github.com"
 
 header-img: /assets/img/work.jpg
 
+home-img: /assets/img/home.jpg
+
 github_username:  phycholee
 
 # Build settings
@@ -41,7 +43,7 @@ all_categories: [
 #  id     标题        URL            副标题            头图片
 ["java", "Java","/posts/java.html","Java笔记","/assets/img/java_coffee.jpg"],
 ["front", "前端开发","/posts/front.html","前端知识笔记","/assets/img/front.jpg"], 
-["android", "Android","/posts/android.html","Android笔记"],
+["android", "Android","/posts/android.html","Android笔记","/assets/img/android.jpg"],
 ["news", "新闻","/posts/news.html","新闻热点","/assets/img/news.jpg"], 
 ["todayTalk", "今日感想","/posts/todayTalk.html","记录生活随想","/assets/img/notebook.jpg"],
 ["digital", "数码","/posts/digital.html","数码新潮","/assets/img/digital.jpeg"]
