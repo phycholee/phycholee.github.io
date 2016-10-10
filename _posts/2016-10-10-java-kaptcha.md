@@ -10,11 +10,11 @@ header-img:
 
 ## Kaptcha使用
 
-Kaptcha是Java生成验证码框架
+Kaptcha是Java生成验证码框架，功能强大，使用简单。在一个项目中与shiro结合使用进行登录验证，以下是简单的使用手册。
 
 ### 导入jar包
 
-可到 https://code.google.com/archive/p/kaptcha/downloads 下载jar包
+可到[https://code.google.com/archive/p/kaptcha/downloads](https://code.google.com/archive/p/kaptcha/downloads)下载jar包
 
 如果是maven项目，加入以下依赖
 
@@ -24,7 +24,7 @@ Kaptcha是Java生成验证码框架
     <dependency>  
         <groupId>com.google.code.kaptcha</groupId>  
         <artifactId>kaptcha</artifactId>  
-        <version>2.3.2</version>  
+        <version>2.3.2</version>
     </dependency>
 
 {% endhighlight %}
