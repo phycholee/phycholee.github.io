@@ -1,0 +1,28 @@
+.return-top{
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	width: 46px;
+	z-index: 999;
+}
+
+.return-top .go{
+	border-radius: 4px;
+	cursor:pointer;
+	text-align:center;
+	line-height:46px;
+	display: block;
+	width: 46px;
+	height: 46px;
+	background:#999;
+	color:#fff;
+}
+
+.return-top .go:hover{
+	background:#000;
+	color:#fff;
+}
+
+.dn{
+	display: none;
+}
