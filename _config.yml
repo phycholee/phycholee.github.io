@@ -42,6 +42,7 @@ gems: [jekyll-paginate]
 all_categories: [
 #  id     标题        URL            副标题            头图片
 ["java", "Java","/posts/java.html","Java笔记","/assets/img/java_coffee.jpg"],
+["spring", "Spring","/posts/spring.html","Spring笔记","/assets/img/spring.png"],
 ["database", "Database","/posts/database.html","Database笔记","/assets/img/database.png"],
 ["front", "前端开发","/posts/front.html","前端知识笔记","/assets/img/front.jpg"], 
 ["android", "Android","/posts/android.html","Android笔记","/assets/img/android.jpg"],
