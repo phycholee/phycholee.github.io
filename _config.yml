@@ -28,7 +28,7 @@ kramdown:
 
 
 #分页
-paginate: 8
+paginate: 10
 #paginate_path: "posts/page:num"
 
 #时区

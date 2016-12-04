@@ -28,16 +28,26 @@ title: "三楼四楼"
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path}}/">
-			&larr; 上一页
-		</a>
-    </li>
+    	<!-- 在https连接中发现一个问题，当后面不是.html或/结尾，浏览器会把https去掉，导致不能访问，所以在分页连接后面加了/ -->
+    	<!-- 但是在第1页的链接跟其他页不一样，所以判断上一页不是第1页才加/ -->
+    	{% if paginator.previous_page > 1 %}
+		    <li class="previous">
+		        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/'}}/">
+					&larr; 上一页
+				</a>
+		    </li>
+		{% else %}
+			<li class="previous">
+		        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/'}}">
+					&larr; 上一页
+				</a>
+		    </li>
+		{% endif %}
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
     <!--  | prepend: site.baseurl | replace: '//', '/'  -->
-        <a href="{{ paginator.next_page_path}}/">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/'}}/">
 			下一页 &rarr;
 		</a>
     </li>
