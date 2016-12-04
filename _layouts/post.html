@@ -45,7 +45,7 @@
                     <li class="previous">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
                         上一章<br>
-                        <span>{{page.previous.title | strip_html | truncate:14 }}</span>
+                        <!-- <span>{{page.previous.title | strip_html | truncate:14 }}</span> -->
                         </a>
                     </li>
                     {% endif %}
@@ -53,7 +53,7 @@
                     <li class="next">
                         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
                         下一章<br>
-                        <span>{{page.next.title}}</span>
+                        <!-- <span>{{page.next.title | strip_html | truncate:14}}</span> -->
                         </a>
                     </li>
                     {% endif %}
