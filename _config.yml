@@ -7,10 +7,10 @@
 
 # Site settings
 title: PhychoLee's Blog
-email: 962109025@qq.com
+email: phycholee@qq.com
 
-#baseurl: /phycholee.github.com
-description: > # this means to ignore newlines until "baseurl:"
+#baseurl: /phycholee.github.com 
+description: "PhychoLee 三楼四楼" # this means to ignore newlines until "baseurl:"
     
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://phycholee.github.com" 
@@ -24,7 +24,7 @@ github_username:  phycholee
 # Build settings
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  input: GFM                            # use Github Flavored Markdown !important 
 
 
 #分页
