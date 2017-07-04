@@ -179,7 +179,7 @@ Kaptcha是Java生成验证码框架，功能强大，使用简单。在一个项
 {% endhighlight %}
 
 最后效果图
-![验证码](/assets/posts_img/20161010-kaptcha/captcha-image.jpeg)
+![验证码](http://osjs7p1js.bkt.clouddn.com/post_img/captcha-image.jpeg)
 
 ### Kaptcha配置项
 

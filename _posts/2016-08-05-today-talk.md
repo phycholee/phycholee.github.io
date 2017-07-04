@@ -16,9 +16,9 @@ categories: todayTalk
 好了，今天的感想到此为止，不会长篇大论，也不必要，改天再来完善。
 
 三星Galaxy Note7好美，虽然还是觉得没超过S7 edge。不过反正没钱。
-![img](/assets/posts_img/20160805/20160805_todaytalk01.jpg)
+![img](http://osjs7p1js.bkt.clouddn.com/post_img/20160805_todaytalk01.jpg)
 
 蓝色简直美爆
-![img](/assets/posts_img/20160805/20160805_todaytalk02.jpg)
+![img](http://osjs7p1js.bkt.clouddn.com/post_img/20160805_todaytalk02.jpg)
 
 完！感觉尾巴好空啊。
