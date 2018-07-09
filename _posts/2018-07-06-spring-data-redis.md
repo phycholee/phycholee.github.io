@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "spring-data-redis使用(@Cacheable缓存和分布式锁)"
+title:  "spring-data-redis使用"
 subtitle:  "spring-data-redis"
 date:   2018-07-06 10:20:00 +0800
 author: PhychoLee
@@ -10,7 +10,7 @@ header-img:
 
 # spring-data-redis
 
-Spring提供了spring-data-redis对Jedis、lettuce进行封装，提供了一些操作Redis数据库的接口。同时提供了spring-boot-starter-data-redis包，在SpringBoot项目中使用会更加方便。本文会对spring-data-redis的基本使用进行简单的介绍，重点会放在@Cacheable修改序列化方式和Redis分布式锁上。
+Spring提供了spring-data-redis对Jedis、lettuce进行封装，提供了一些操作Redis数据库的接口。同时提供了spring-boot-starter-data-redis包，在SpringBoot项目中使用会更加方便。本文会对spring-data-redis的基本使用进行简单的介绍，重点会放在@Cacheable修改序列化方式上。
 
 ## 基本使用
 
@@ -72,7 +72,7 @@ redisTemplate可操作包括String的其他数据结构
 
 ## 序列化方式
 
-stringRedisTemplate会默认使用StringRedisSerializer，但redisTemplate默认使用的是JdkSerializationRedisSerializer，在Redis中查看数据会显示如下，不适合数据观看，因此需要换一种序列化方式。
+stringRedisTemplate会默认使用StringRedisSerializer，但redisTemplate默认使用的是JdkSerializationRedisSerializer，在Redis中查看数据会显示如下，不适合数据查看，因此需要换一种序列化方式。
 
 ![](http://osjs7p1js.bkt.clouddn.com/jdkserialization.png)
 
@@ -135,7 +135,7 @@ spring-data-redis提供了@Cacheable等注解帮助我们去实现缓存功能�
 
 @Cacheable会根据**返回的值**进行缓存，如果缓存有数据，就不执行方法主体，一般放在查询方法上。
 
-@CachePut会根据**返回的值**进行缓存，不同的是，方法主体一点会执行，一般放在新增和修改方法上。
+@CachePut会根据**返回的值**进行缓存，不同的是，方法主体一定会执行，一般放在新增和修改方法上。
 
 @CacheEvict对缓存进行清除，一般放在修改或删除方法上。
 
