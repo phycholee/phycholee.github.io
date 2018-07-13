@@ -158,7 +158,7 @@ Hibernate Validator提供了使用注解来校验参数，可以优雅的解决�
         return JsonData.error(e.getMessage(), null);
     }
 
-很多时候，我们需要下面这种参数的校验，虽然此类参数可以同@RequestParam来校验，但我们希望能够自定义错误返回信息。
+很多时候，我们需要下面这种参数的校验，虽然此类参数可以通过@RequestParam来校验，但我们希望能够自定义错误返回信息。
 
 	@PostMapping("")
     public JsonData save(@NotBlank(message = "名称不能为空") String name){
