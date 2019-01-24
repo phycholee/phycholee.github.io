@@ -14,25 +14,25 @@ header-img:
 
 ## 项目结构
 
-![项目结构](/assets/post_img/springboot_dubbo/project_structure.png)
+![项目结构](/assets/posts_img/springboot_dubbo/project_structure.png)
 
 分为三个项目，将service接口、service实现、web层分开。
 
 - **springboot-dubbo-api**
 
-![api](/assets/post_img/springboot_dubbo/project_structure_api.png)
+![api](/assets/posts_img/springboot_dubbo/project_structure_api.png)
 
 此项目为service接口层，主要放service接口、实体类、dto、枚举类、异常类等通用类。此项目将打包成jar包在下面两个项目中引用，当然这些是交给maven来处理。
 
 - **springboot-dubbo-service**
 
-![service](/assets/post_img/springboot_dubbo/project_structure_service.png)
+![service](/assets/posts_img/springboot_dubbo/project_structure_service.png)
 
 此项目为具体的业务实现，包括具体的业务代码、Mybatis的mapper接口和sql语句。此项目为服务提供者，service会注册为dubbo服务，使用zookeeper进行管理。
 
 - **springboot-dubbo-web**
 
-![web](/assets/post_img/springboot_dubbo/project_structure_web.png)
+![web](/assets/posts_img/springboot_dubbo/project_structure_web.png)
 
 此项目和前端打交道，为前端输出数据（单纯考虑rest模式下）。服务的消费者，需要注册为服务消费者，从zookeeper中获取已注册的服务。
 
