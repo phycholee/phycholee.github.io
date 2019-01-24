@@ -88,9 +88,9 @@ Hibernate Validator提供了使用注解来校验参数，可以优雅的解决�
 
 查询资料和博客，发现都没有具体的实现方式，只能自己硬着头皮打断点查看源码。最后在RequestResponseBodyMethodProcessor.resolveArgument()中找到的关键点，此方法会校验被@Validated注解的对象，关键在于红框的内容，isBindExceptionRequired方法会判断controller方法有无引入BindingResult，没有则抛出MethodArgumentNotValidException。
 
-![](http://osjs7p1js.bkt.clouddn.com/resolveargument.png)
+![](/assets/post_img/springboot_validator/resolveargument.png)
 
-![](http://osjs7p1js.bkt.clouddn.com/isbindexceptionrequired.png)
+![](/assets/post_img/springboot_validator/isbindexceptionrequired.png)
 
 有了这个异常抛出，接下来就好办了。首先controller方法去掉BindingResult。
 
@@ -132,7 +132,7 @@ Hibernate Validator提供了使用注解来校验参数，可以优雅的解决�
 
 上面只是针对有@RequestBody的json入参，对于普通的表单形式就无效了。原因是两种入参形式解析的Processor是不同的。表单入参的参数校验在ModelAttributeMethodProcessor.resolveArgument()中，可发现抛出的异常是BindException。所以只需要在全局异常处理对BindException也进行处理。
 
-![](http://osjs7p1js.bkt.clouddn.com/resolveargument2.png)
+![](/assets/post_img/springboot_validator/resolveargument2.png)
 
 	@ExceptionHandler(Exception.class)
     @ResponseBody
@@ -167,7 +167,7 @@ Hibernate Validator提供了使用注解来校验参数，可以优雅的解决�
 
 具体的操作是像上面代码加入注解校验，然后在Controller方法上加入@Validated注解。此时，如果校验不通过就会在MethodValidationInterceptor.invoke()中抛出ConstraintViolationException。
 
-![](http://osjs7p1js.bkt.clouddn.com/methodvalidationinterceptor.png)
+![](/assets/post_img/springboot_validator/methodvalidationinterceptor.png)
 
 从上图中看到ConstraintViolationException并不包含BindingResult，而是Set<ConstraintViolation<Object>>。对ConstraintViolationException的处理和上面两种异常不太一样。
 

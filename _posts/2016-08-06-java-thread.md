@@ -56,7 +56,7 @@ header-img:
 ### 线程生命周期 ###
 
 一张图解释
-![img](http://osjs7p1js.bkt.clouddn.com/post_img/thread_lifecircle.png)
+![img](/assets/posts_img/20160805/thread_lifecircle.png)
 
 ### 守护线程 ###
 
