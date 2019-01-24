@@ -74,7 +74,7 @@ redisTemplate可操作包括String的其他数据结构
 
 stringRedisTemplate会默认使用StringRedisSerializer，但redisTemplate默认使用的是JdkSerializationRedisSerializer，在Redis中查看数据会显示如下，不适合数据查看，因此需要换一种序列化方式。
 
-![](http://osjs7p1js.bkt.clouddn.com/jdkserialization.png)
+![](/assets/posts_img/spring_data_redis/jdkserialization.jpg)
 
 
 下面把redisTemplate的key的序列化方式设置为StringRedisSerializer，value的序列化方式设置为FastJsonRedisSerializer。
@@ -103,7 +103,7 @@ stringRedisTemplate会默认使用StringRedisSerializer，但redisTemplate默认
 
 修改后，显示为
 
-![](http://osjs7p1js.bkt.clouddn.com/fastjsonserialization.png)
+![](/assets/posts_img/spring_data_redis/fastjsonserialization.jpg)
 
 ## 缓存
 
@@ -175,9 +175,6 @@ spring-data-redis提供了@Cacheable等注解帮助我们去实现缓存功能�
 
 @Cacheable会对null值设置一个特殊的值，防止缓存穿透
 
-![](http://osjs7p1js.bkt.clouddn.com/cachepenetration.png)
-
-
 缓存一般是针对热点数据，上面在新增和保存的方法中使用@CachePut会把所有数据都放到缓存中，并且没有失效处理。另一种方案是在修改或删除的时候删除数据，只有在取数据的时候才做加入缓存处理。
 
 将新增、修改和删除都进行删除缓存处理。新增也加入缓存删除是@Cacheable会把不存在的值做特殊缓存处理，如果新增的键已经在缓存，需要删除。
@@ -218,7 +215,7 @@ spring-data-redis提供了@Cacheable等注解帮助我们去实现缓存功能�
 
 使用@Cacheable存储的数据不使用redisTemplate，所以上面设置的序列化方式对其无效。上面缓存会使用默认的序列化方式。
 
-![](http://osjs7p1js.bkt.clouddn.com/jdkserializationcache.png)
+![](/assets/posts_img/spring_data_redis/jdkserializationcache.jpg)
 
 那么就要单独对其设置序列化方式，同时设置过期时间
 
@@ -238,15 +235,15 @@ spring-data-redis提供了@Cacheable等注解帮助我们去实现缓存功能�
 
 第一次获取走数据库，同时将设置缓存，缓存数据为json格式。
 
-![](http://osjs7p1js.bkt.clouddn.com/fastjsonserialnotype.png)
+![](/assets/posts_img/spring_data_redis/fastjsonserialnotype.jpg)
 
 但第二次获取的时候就报错ClassCastException
 
-![](http://osjs7p1js.bkt.clouddn.com/classcastexception.png)
+![](/assets/posts_img/spring_data_redis/classcastexception.jpg)
 
 经过排查，是使用FastJsonRedisSerializer不能反序列化为Activity。
 
-![](http://osjs7p1js.bkt.clouddn.com/fastjsonredisserializer.png)
+![](/assets/posts_img/spring_data_redis/fastjsonredisserializer.jpg)
 
 
 重写了一个FastJsonRedisSerializer，不同在于序列化的时候把className也一并写进去。
@@ -296,12 +293,12 @@ spring-data-redis提供了@Cacheable等注解帮助我们去实现缓存功能�
 
 此时，结果会多出一个@type字段。
 
-![](http://osjs7p1js.bkt.clouddn.com/fastjsonserialwithtype.png)
+![](/assets/posts_img/spring_data_redis/fastjsonserialwithtype.jpg)
 
 
 但第二次访问的时候会还是会报错，这次是JSONException.
 
-![](http://osjs7p1js.bkt.clouddn.com/autotypenotsupport.png)
+![](/assets/posts_img/spring_data_redis/autotypenotsupport.jpg)
 
 
 查询fastjson得知，在1.2.25之后的版本，autotype功能是受限的。需要打开白名单功能。
